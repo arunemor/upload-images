@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    padding: 50px;
+}
+
+.container {
+    background: white;
+    padding: 40px;
+    max-width: 500px;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+input[type="file"] {
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    background: #0078D7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.download {
+    margin-top: 20px;
+}
