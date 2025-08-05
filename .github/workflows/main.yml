@@ -20,4 +20,4 @@ jobs:
             aws-region: ap-south-1
 
        - name: deploy static site on s3 bucket
-         run: aws s3 sync . s3://image-upload --delete
+         run: aws s3 sync . s3://image-upload20 --delete
