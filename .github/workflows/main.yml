@@ -15,9 +15,9 @@ jobs:
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v2
         with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: ap-south-1
+         role-to-assume: arn:aws:iam::384139471520:role/s3-upload 
+          aws-region: ap-south-1 
+
 
       - name: Deploy static site to S3 bucket
-        run: aws s3 sync . s3://image-upload20 --delete
+        run: aws s3 sync . s3://imagesupload20 --delete
