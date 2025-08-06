@@ -16,8 +16,7 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v2
         with:
          role-to-assume: arn:aws:iam::384139471520:role/s3-upload 
-          aws-region: ap-south-1 
-
+         region: ap-south-1
 
       - name: Deploy static site to S3 bucket
         run: aws s3 sync . s3://imagesupload20 --delete
